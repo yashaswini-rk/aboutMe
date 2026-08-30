@@ -1,0 +1,228 @@
+%------------------------
+% Personal Resume
+% Author  : Yashaswini Ramakrishna
+% Version : 2.0
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color} 
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+
+\usepackage{graphicx}
+\graphicspath{ {./assets/} }
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% add colour for hyperlink
+\usepackage{xcolor}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+% \newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+\newcommand{\MYhref}[3][blue]{\href{#2}{{\underline{\textcolor{#1}{#3}}}}}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubSubItem}[1]{
+  \item[-] \small{#1}
+}
+
+% Remove the bullet point
+\newcommand{\resumeSubheading}[4]{%
+    \item[\vspace{-1pt}]%
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}%
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}%
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Yashaswini Ramakrishna}}\\
+  {\color{Gray}{\small Senior Embedded Software Engineer $|$ C/C++ $|$ Yocto $|$ Linux $|$ RDK $|$ Python}}
+  & \faEnvelope\ \href{mailto:yashu.ramakrishna@gmail.com}{yashu.ramakrishna@gmail.com}\\
+  \faGlobe\ \href{https://yashaswini-rk.github.io/}{yashaswini-rk.github.io}
+  & \faPhone\ +1 (484)-581 9957\\
+  \faGithub\ \href{https://github.com/yashaswini-rk}{github.com/yashaswini-rk}
+  & Philadelphia, PA\\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Visvesvaraya Technological University}{Karnataka, India}
+{Bachelor of Engineering - Electronics and Communication; Score: 84\%}{June 2014 - June 2018}
+{\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses: Microcontrollers, Signals and Systems, Digital Signal Processing (DSP), VLSI Fundamentals, Microprocessors, Satellite Communication} }}}
+\resumeSubHeadingListEnd
+
+%-----------Skills-----------------
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	  \resumeSubItem{Languages~~~~~~~~~~~~~~~~~~~~~~}{C++, C, Python, bash}
+	  \resumeSubItem{Embedded Development~~~}{Yocto}
+    \resumeSubItem{Tools~~~~~~~~~~~~~~~~~~~~~~~~~~~~}{Bitbake , CMAKE and AutoTools, GIT (github/gitlab/bitbucket), gerrit, gdb, valgrind,\\~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MySQL, readelf, Jenkins, Jira}
+	  \resumeSubItem{Multimedia Frameworks~~~}{Gstreamer}
+	  \resumeSubItem{Platforms~~~~~~~~~~~~~~~~~~~~~~}{Linux, Windows, Arduino, Raspberry, RDK}
+    %\resumeSubItem{Soft Skills~~~~~~~~~~~~~~~~~~~~~~~~~}{Leadership, Event Management, Writing, Public Speaking, Time Management}
+  \resumeSubHeadingListEnd
+
+%-----------Experience-----------------
+\vspace{-5pt}
+\section{Experience}
+
+% ------------TEL---------------------
+  \resumeSubHeadingListStart
+    \resumeSubheading{Tata Elxsi}{Philadelphia, US}
+    {Senior Embedded Software Engineer (Full-time)}{November 2018 - Present}
+    {Project client: \textbf{Comcast}}
+
+    \resumeItemListStart
+
+          \resumeItem{Development of OTT apps for RDK ({\color{Gray}{C/C++}})}
+          {\\Led the design and development of premium apps porting layer of Amazon Prime, HBO Max, YouTube, and Netflix, for the RDK community. Key contributions include:}
+          \resumeItemListStart
+              \resumeSubSubItem{Developed and maintained the Netflix integration/device porting layer, implementing platform-specific changes in accordance with common port architecture and RDK standards.}
+              \resumeSubSubItem{Strong understanding of the Netflix application integration stack, including player/GStreamer components, DRM integration, authentication and authorization flows, and application-platform interfaces.}
+              \resumeSubSubItem{Owned end-to-end Netflix certification, including certification test execution, test-case analysis, issue investigation, debugging, bug fixing, fix validation, and coordination with dependent platform/SoC teams.}
+              \resumeSubSubItem{Worked extensively with the Netflix Testing Suite (NTS) for application validation, certification, and troubleshooting.}
+              \resumeSubSubItem{Performed EyePatch and test-case analysis to understand application behavior, identify failure points, and debug certification issues across the application and platform layers.}
+              \resumeSubSubItem{Worked on integrating and validating new Netflix features and capabilities, including Cloud Gaming and Multiplayer.}
+              \resumeSubSubItem{Developed and maintained Netflix launcher integration on RDK-based platforms.}
+              \resumeSubSubItem{Working knowledge of other major native OTT applications, including Amazon Prime Video and YouTube, and their integration requirements within the RDK ecosystem.\\~}
+          \resumeItemListEnd
+
+          \resumeItem{Reference Home UI for RDK Video Devices ({\color{Gray}{Lightning/JavaScript}})}
+          {\\}
+          \resumeItemListStart
+              \resumeSubSubItem{Solid hands-on experience working with Reference Home UI for RDK Video Devices}
+              \resumeSubSubItem{Redesigned the RDK UI/UX, a JavaScript- and Lightning-based application, to support adoption of the DAC (Downloadable Application Container) architecture.}
+              \resumeSubSubItem{Oversaw UI development activities across implementation, integration, and validation, ensuring alignment with DAC architecture and RDK platform requirements.}
+              \resumeSubSubItem{Strong understanding of application lifecycle management through the Reference Home UI, including application discovery, launch, and management.}
+              \resumeSubSubItem{Hands-on experience with DIAL (Discovery and Launch) integration and its interaction with the RDK Reference Home UI.}
+              \resumeSubSubItem{Strong understanding of Device Automation Bus (DAB) and its integration with the Reference Home UI, including UI changes required to support device automation and validation.\\~}
+          \resumeItemListEnd
+
+          \resumeItem{Provisioning \& Cryptography for Native Apps ({\color{Gray}{C/C++}})}
+          {\\}
+          \resumeItemListStart
+              \resumeSubSubItem{Strong understanding of cryptographic APIs and security mechanisms used by native OTT applications for authentication and provisioning, including foundational cryptographic operations such as encryption, HMAC, and Diffie-Hellman key exchange.}
+              \resumeSubSubItem{Contributed to the development of the iCrypto Thunder plugin, supporting cryptographic requirements for OTT application authentication and provisioning.}
+              \resumeSubSubItem{Developed a cryptography abstraction layer to enable support for multiple crypto providers and implementations, including OpenSSL, SecAPI, and direct SoC-level crypto calls.}
+              \resumeSubSubItem{Supported the integration of SoC Trusted Application (TA) libraries for cryptographic operations and security requirements, primarily for Netflix integration.\\~}
+          \resumeItemListEnd
+
+          \resumeItem{DRM, OCDM \& Thunder Plugins ({\color{Gray}{C/C++}})}
+          {\\}
+          \resumeItemListStart
+              \resumeSubSubItem{Strong understanding of DRM architecture and content protection, including OCDM (Open Content Decryption Module), Widevine, PlayReady, and Secure Video Path (SVP), and their integration within the RDK ecosystem.}
+              \resumeSubSubItem{Hands-on experience with DRM integration and troubleshooting across the application, OCDM, and underlying platform/SoC layers.\\~}
+          \resumeItemListEnd
+
+          \resumeItem{RDK Thunder plugins ({\color{Gray}{C/C++}})}
+          {\\}
+          \resumeItemListStart
+              \resumeSubSubItem{Hands-on experience developing Thunder plugins for RDK, including development of Continue Watching plugin.\\~}
+          \resumeItemListEnd
+
+      \resumeItemListEnd
+
+%-----------PROJECTS-----------------
+% /TODO ADD HERE
+
+%-----------Community Engagement----------
+\vspace{-5pt}
+\section{Leadership \& Community Engagement}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Tata Elxsi Young Leaders Programme (YLP)}{Philadelphia,US}
+    {2024-2025}{}
+      \resumeItemListStart
+        \resumeItem{Leadership Development}{Selected for and successfully completed Tata Elxsi's Young Leaders Programme (YLP), a leadership development initiative focused on preparing high-potential employees for future leadership roles.}
+        \resumeItem{Skills Development}{Developed skills in communication, critical thinking, negotiation, decision-making, and delegation through structured learning, mentorship, and simulation-based assessments using KNOLSKAPE, involving real-world business scenarios and leadership decision-making.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Rotaract Club}{Banglore, India}
+    {Active Member $|$ Club Secretary}{}
+      \resumeItemListStart
+        \resumeItem{Community Engagement}{Active member of the Rotaract Club, affiliated with Rotary International District 3190, during college.}
+        \resumeItem{Club Leadership}{Served as Club Secretary for a club with approximately 500 members, supporting club operations, coordination, communication, and member engagement.}
+        \resumeItem{Event Management}{Planned and organized college-level events, coordinating with teams and managing activities across the event lifecycle.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+% ---------------QR Code---------------
+  \vspace*{\fill}
+  \flushright \includegraphics[scale=0.075]{qr}
+
+\end{document}
